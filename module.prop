@@ -1,0 +1,6 @@
+id=Frida-Installer
+name=Frida-Server Installer
+version=1.5
+versionCode=1
+author=Vasuki
+description=Downloads Florida-Binary and push the binary to system/bin.
