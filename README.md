@@ -30,7 +30,7 @@ tsu
 ```
 
 ```
-./Vasuki`
+./Vasuki
 ```
 
 ### Connect to Frida (in a new Termux session)
