@@ -18,19 +18,26 @@ Frida-Server Installer which downloads binary online and pushes it to system/bin
 
 ### Install Frida CLI tools
 
-`frida-i`
+```
+frida-i
+```
 
 ### Start Frida-server
 
-`cd /data/local/tmp/`
+```
+cd /data/local/tmp/
+tsu
+```
 
-`tsu`
-
-`./Vasuki`
+```
+./Vasuki`
+```
 
 ### Connect to Frida (in a new Termux session)
 
-`frida -H localhost:27042 -f pkg.name -l script.js`
+```
+frida -H localhost:27042 -f pkg.name -l script.js
+```
 
 Replace `pkg.name` with your target package and `script.js` with your Frida script.
 
