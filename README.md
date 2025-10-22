@@ -36,7 +36,7 @@ tsu
 ### Connect to Frida (in a new Termux session)
 
 ```
-frida -H localhost:27042 -f pkg.name -l script.js
+frida -H localhost:27042 -f pkg.name -l pathto/script.js
 ```
 
 Replace `pkg.name` with your target package and `script.js` with your Frida script.
