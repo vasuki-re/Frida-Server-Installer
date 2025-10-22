@@ -25,7 +25,7 @@ frida-i
 ### Start Frida-server
 
 ```
-cd /data/local/tmp/
+cd /system/bin/
 tsu
 ```
 
