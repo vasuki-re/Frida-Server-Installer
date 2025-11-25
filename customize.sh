@@ -105,12 +105,9 @@ chmod 777 "$MODPATH/system/bin/Vasuki"
 }
 
 fix_wget() {
-    # Extract module ID from module.prop
     MODID=$(grep "^id=" "$MODPATH/module.prop" | cut -d= -f2)
-    
-    # Check if the marker file exists in the currently installed module directory
+   
     if [ -f "/data/adb/modules/$MODID/wget" ]; then
-        # Persist the marker to the new installation
         touch "$MODPATH/wget"
         return 0
     fi
