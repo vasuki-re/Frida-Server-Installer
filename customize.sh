@@ -58,7 +58,7 @@ case "$ARCH" in
 esac
 
 chmod +x "$CURL"
-LATEST_TAG=$("$CURL" -s -L https://api.github.com/repos/vasuki-re/Florida/releases/latest | grep '"tag_name":' | cut -d'"' -f4)
+LATEST_TAG=$("$CURL" -s -L https://api.github.com/repos/Ylarod/Florida/releases/latest | grep '"tag_name":' | cut -d'"' -f4)
 
 if [ -z "$LATEST_TAG" ]; then
     echo "Failed to fetch latest release tag"
@@ -67,10 +67,10 @@ fi
 
 case "$ARCH" in
   arm64-v8a)
-    URL="https://github.com/vasuki-re/Florida/releases/download/${LATEST_TAG}/florida-server-${LATEST_TAG}-android-arm64.gz"
+    URL="https://github.com/Ylarod/Florida/releases/download/${LATEST_TAG}/florida-server-${LATEST_TAG}-android-arm64.gz"
     ;;
   armeabi-v7a)
-    URL="https://github.com/vasuki-re/Florida/releases/download/${LATEST_TAG}/florida-server-${LATEST_TAG}-android-arm.gz"
+    URL="https://github.com/Ylarod/Florida/releases/download/${LATEST_TAG}/florida-server-${LATEST_TAG}-android-arm.gz"
     ;;
 esac
 
